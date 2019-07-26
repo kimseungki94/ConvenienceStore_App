@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/holo_red_dark</item>
+        <item name="colorPrimaryDark">@android:color/holo_red_dark</item>
+        <item name="colorAccent">@android:color/holo_orange_light</item>
+        <item name="android:colorForeground">@android:color/background_dark</item>
+    </style>
+
+    <style name="loadingTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:background">@drawable/loading</item>
+    </style>
+
+    <style name="NoTitle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/holo_red_dark</item>
+        <item name="colorPrimaryDark">@android:color/holo_red_dark</item>
+        <item name="colorAccent">@android:color/holo_orange_light</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

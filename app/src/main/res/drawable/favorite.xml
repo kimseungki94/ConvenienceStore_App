@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="false"
+        android:drawable="@android:drawable/btn_star_big_off">
+    </item>
+    <item
+        android:state_selected="true"
+        android:drawable="@android:drawable/btn_star_big_on">
+    </item>
+</selector>
+
+<!-- 즐겨찾기버튼은 활성화되어있는 상태에 따라 버튼의 모양이 달라야한다.-->

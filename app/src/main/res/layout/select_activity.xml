@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버전 체크중..." />
+
+
+    <ImageButton
+        android:id="@+id/drinkBtn"
+        android:layout_below="@+id/version"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/drink"
+        android:onClick="recommend_Drink"/>
+
+    <ImageButton
+        android:id="@+id/milkBtn"
+        android:layout_below="@+id/version"
+        android:layout_toRightOf="@+id/drinkBtn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/milk"
+        android:onClick="recommend_MilkProduct"/>
+
+    <ImageButton
+        android:id="@+id/sandBtn"
+        android:layout_below="@+id/version"
+        android:layout_toRightOf="@+id/milkBtn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/sand"
+        android:onClick="recommend_ConvenienceFood"/>
+
+    <ImageButton
+        android:id="@+id/favoriteBtn"
+        android:layout_below="@+id/version"
+        android:layout_toRightOf="@+id/sandBtn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/star"
+        android:onClick="bookmark"/>
+<!-- 음료 버튼-->
+    <Button
+        android:text="탄산"
+        android:textColor="#FFFFFF"
+        android:id="@+id/carbon"
+        android:visibility="invisible"
+        android:background="@drawable/button"
+        android:layout_below="@+id/drinkBtn"
+        android:layout_margin="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <Button
+        android:text="이온"
+        android:textColor="#FFFFFF"
+        android:id="@+id/ionic"
+        android:visibility="invisible"
+        android:background="@drawable/button"
+        android:layout_below="@+id/drinkBtn"
+        android:layout_toRightOf="@+id/carbon"
+        android:layout_margin="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <Button
+        android:text="커피"
+        android:textColor="#FFFFFF"
+        android:id="@+id/coffee"
+        android:visibility="invisible"
+        android:background="@drawable/button"
+        android:layout_below="@+id/drinkBtn"
+        android:layout_toRightOf="@+id/ionic"
+        android:layout_margin="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <Button
+        android:text="쥬스"
+        android:textColor="#FFFFFF"
+        android:id="@+id/juice"
+        android:visibility="invisible"
+        android:background="@drawable/button"
+        android:layout_below="@+id/drinkBtn"
+        android:layout_toRightOf="@+id/coffee"
+        android:layout_margin="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <Button
+        android:text="물"
+        android:textColor="#FFFFFF"
+        android:id="@+id/water"
+        android:visibility="invisible"
+        android:background="@drawable/button"
+        android:layout_below="@+id/drinkBtn"
+        android:layout_toRightOf="@+id/juice"
+        android:layout_margin="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+<!-- 유제품 버튼-->
+    <Button
+        android:text="우유"
+        android:textColor="#FFFFFF"
+        android:id="@+id/milk"
+        android:visibility="invisible"
+        android:background="@drawable/button"
+        android:layout_below="@+id/milkBtn"
+        android:layout_margin="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <Button
+        android:text="아이스크림"
+        android:textColor="#FFFFFF"
+        android:id="@+id/ice_cream"
+        android:visibility="invisible"
+        android:background="@drawable/button"
+        android:layout_below="@+id/milkBtn"
+        android:layout_toRightOf="@+id/milk"
+        android:layout_margin="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <Button
+        android:text="발효유"
+        android:textColor="#FFFFFF"
+        android:id="@+id/fermented"
+        android:visibility="invisible"
+        android:background="@drawable/button"
+        android:layout_below="@+id/milkBtn"
+        android:layout_toRightOf="@+id/ice_cream"
+        android:layout_margin="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+<!-- 간편식 버튼-->
+    <Button
+        android:text="면"
+        android:textColor="#FFFFFF"
+        android:id="@+id/noodle"
+        android:visibility="invisible"
+        android:background="@drawable/button"
+        android:layout_below="@+id/sandBtn"
+        android:layout_margin="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <Button
+        android:text="밥"
+        android:textColor="#FFFFFF"
+        android:id="@+id/rice"
+        android:visibility="invisible"
+        android:background="@drawable/button"
+        android:layout_below="@+id/sandBtn"
+        android:layout_toRightOf="@+id/noodle"
+        android:layout_margin="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <Button
+        android:text="빵"
+        android:textColor="#FFFFFF"
+        android:id="@+id/bread"
+        android:visibility="invisible"
+        android:background="@drawable/button"
+        android:layout_below="@+id/sandBtn"
+        android:layout_toRightOf="@+id/rice"
+        android:layout_margin="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+</RelativeLayout>
